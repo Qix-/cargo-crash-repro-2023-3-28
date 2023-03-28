@@ -1,0 +1,9 @@
+cargo-features = ["per-package-target"]
+
+[package]
+name = "arch-x86_64"
+version = "0.1.0"
+forced-target = "triple/x86_64.json"
+
+[dependencies]
+kernel = { path = "../kernel" }

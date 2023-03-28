@@ -1,0 +1,17 @@
+{
+	"llvm-target": "i686-unknown-myos",
+	"data-layout": "e-p:32:32-f64:32:64-i64:32:64-f80:32:32-n8:16:32",
+	"target-endian": "little",
+	"target-pointer-width": "32",
+	"target-c-int-width": "32",
+	"features": "-mmx,-sse,-sse2,-sse3,-ssse3",
+	"os": "myos",
+	"arch": "x86",
+	"linker-flavor": "ld.lld",
+	"linker": "rust-lld",
+	"pre-link-args": {
+		"ld": ["target-x86/link.ld"]
+	},
+	"panic-strategy": "abort",
+	"disable-redzone": true
+}

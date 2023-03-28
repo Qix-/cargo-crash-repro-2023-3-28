@@ -1,0 +1,6 @@
+[package]
+name = "arch-x86"
+version = "0.1.0"
+
+[dependencies]
+kernel = { path = "../kernel" }
